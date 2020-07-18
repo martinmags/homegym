@@ -9,7 +9,7 @@ Install all dependencies
 pip install -r requirements.txt
 ```
 
-## Features
+# Features
 
 - [] User will be able to search a product by name and see a list of products in-stock on the retail market
   - [] RogueFitness
@@ -33,7 +33,7 @@ pip install -r requirements.txt
   - [] Used or Retail
 - [] Users will be able to see a restock graph and see predicted restock dates based on historical data.
 
-## Technology
+# Technology
 
 * Database: Undecided
 * Web Framework: Flask
