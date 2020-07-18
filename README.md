@@ -2,7 +2,14 @@
 
 A web app that tracks websites to help you get the best deals on your home gym equipment. 
 
-# Features
+### Dev Prerequisites
+
+Install all dependencies
+```
+pip install -r requirements.txt
+```
+
+## Features
 
 - [] User will be able to search a product by name and see a list of products in-stock on the retail market
   - [] RogueFitness
@@ -26,19 +33,7 @@ A web app that tracks websites to help you get the best deals on your home gym e
   - [] Used or Retail
 - [] Users will be able to see a restock graph and see predicted restock dates based on historical data.
 
-### Prerequisites
-
-Install all dependencies
-```
-pip install -r requirements.txt
-```
-
-### Deployment
-
-TODO
-
-
-# Technology
+## Technology
 
 * Database: Undecided
 * Web Framework: Flask
