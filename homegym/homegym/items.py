@@ -9,4 +9,7 @@ import scrapy
 class HomegymItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    product_name = scrapy.Field()
+    product_price = scrapy.Field()
+    product_photo = scrapy.Field()
+    product_stock = scrapy.Field()
