@@ -5,11 +5,13 @@
 
 import scrapy
 
-
 class HomegymItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    product_name = scrapy.Field()
-    product_price = scrapy.Field()
-    product_photo = scrapy.Field()
-    product_stock = scrapy.Field()
+    name = scrapy.Field()
+    photo = scrapy.Field()
+    link = scrapy.Field()      
+    brand = scrapy.Field()     
+    price = scrapy.Field()
+    category = scrapy.Field()  
+    condition = scrapy.Field()
+    available = scrapy.Field() 
+    tags = scrapy.Field()      
