@@ -57,3 +57,10 @@ Clientside
 -> [Fetch/Axios] Fetch API endpoints
 -> [HTML/CSS/JS] Display data
 ```
+
+## Process
+[x] Build web scraper just for Rogue barbells
+[x] Connect to a Postgresql database
+[ ] Create an API w/ Django REST framework
+[ ] Test API endpoints
+
