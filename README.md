@@ -2,33 +2,9 @@
 
 A web app that tracks websites to help you get the best deals on your home gym equipment. 
 
-### Dev Prerequisites
-
-Install all dependencies
-```
-pip install -r requirements.txt
-```
-
-### Dev Commands
-
-Enter virtual environment
-```
-source venv/bin/activate
-```
-
-Run Scrapy program in ./homegym/homegym
-```
-scrapy crawl rogue 
-```
-
-Output scrapy program into a json
-```
-scrapy crawl rogue -o test.json
-```
-
 # Features
 
-- [] User will be able to search a product by name and see a list of products in-stock on the retail market
+- [] User will be able to search a product and see a list of products in-stock on the retail market
   - [] RogueFitness
   - [] RepFitness
   - [] FringeSports
@@ -59,22 +35,6 @@ scrapy crawl rogue -o test.json
 * scrapy
 * ...
 
-### DB Schema
-```
-BARBELL, PLATE, RACK, BENCH, BELL, ACCESSORY{
-id          SMALLSERIAL
-  name        TEXT
-  photo       TEXT
-  link        TEXT
-  brand       TEXT 
-  price       MONEY
-  category    TEXT
-  condition   TEXT
-  available   BOOLEAN
-  tags        TEXT[]
-  updated_at  TIMESTAMPTZ
-}
-```
 ## Authors
 
 * Software-Developer: **Martin Magsombol**
