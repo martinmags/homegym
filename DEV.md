@@ -1,13 +1,13 @@
 # Developer Documentation
 
-### Dev Prerequisites
+### Prerequisites
 
 Install all dependencies
 ```
 pip install -r requirements.txt
 ```
 
-### Dev Commands
+### Commands
 
 Enter virtual environment
 ```
