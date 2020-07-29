@@ -59,20 +59,21 @@ scrapy crawl rogue -o test.json
 * scrapy
 * ...
 
-# DB Schema
-BARBELL, PLATE, RACK, BENCH, BELL, ACCESSORY{
-  id          SMALLSERIAL
-  name        TEXT
-  photo       TEXT
-  link        TEXT  
-  brand       TEXT  
-  price       MONEY
-  category    TEXT
-  condition   TEXT
-  available   BOOLEAN
-  tags        TEXT[]  
-  updated_at  TIMESTAMPTZ 
+### DB Schema
+BARBELL, PLATE, RACK, BENCH, BELL, ACCESSORY{<br/>
+  id          SMALLSERIAL<br/>
+  name        TEXT<br/>
+  photo       TEXT<br/>
+  link        TEXT<br/>
+  brand       TEXT<br/>  
+  price       MONEY<br/>
+  category    TEXT<br/>
+  condition   TEXT<br/>
+  available   BOOLEAN<br/>
+  tags        TEXT[]<br/>
+  updated_at  TIMESTAMPTZ<br/>
 }
+
 ## Authors
 
 * Software-Developer: **Martin Magsombol**
