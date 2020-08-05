@@ -43,7 +43,6 @@ class HomegymPipeline:
           category    TEXT NOT NULL,
           condition   TEXT NOT NULL,
           available   BOOLEAN NOT NULL,
-          tags        TEXT[],
           updated_at  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
           PRIMARY KEY(name)
         );

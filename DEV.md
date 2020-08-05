@@ -60,7 +60,14 @@ Clientside
 
 ## Process
 [x] Build web scraper just for Rogue barbells
+
 [x] Connect to a Postgresql database
+
+```
+Postgresql with Django Setup: https://djangocentral.com/using-postgresql-with-django/
+```
+
 [ ] Create an API w/ Django REST framework
+
 [ ] Test API endpoints
 

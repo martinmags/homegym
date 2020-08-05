@@ -1,17 +1,23 @@
 import scrapy
-from ..items import HomegymItem
 # TODO: Daemon script to do continuous scheduled scraping, queue bots
 # TODO: Create django RESTful API endpoints for barbell, plate, rack, bench, accessory, bell 
-
 # TODO: Create RoguePlateSpider
 # TODO: Create RogueRackSpider
 # TODO: Create RogueBenchSpider
 # TODO: Create RogueAccessorySpider
 # TODO: Create RogueBellSpider (Kettlebells, dumbbells)
-
 # TODO: [LOW PRIO] Append tags to item['tags']
 
-# Split Scraping to barbell, bench, plates, racks/cages
+class HomegymItem(scrapy.Item):
+    name = scrapy.Field()
+    photo = scrapy.Field()
+    link = scrapy.Field()      
+    brand = scrapy.Field()     
+    price = scrapy.Field()
+    category = scrapy.Field()  
+    condition = scrapy.Field()
+    available = scrapy.Field() 
+
 class RogueBarbellSpider(scrapy.Spider):
   name = 'rogue_barbell'
   page_number = 1
@@ -67,6 +73,7 @@ class RogueBarbellSpider(scrapy.Spider):
         item['category'] = details['category']
         item['condition'] = details['condition']
         item['available'] = variant.css(".item-qty").get() is not None
+        print("Successfully updated:", item['name'])
         yield item
     else:
       item['name']  = details['name']
@@ -77,5 +84,5 @@ class RogueBarbellSpider(scrapy.Spider):
       item['category'] = details['category']
       item['condition'] = details['condition']
       item['available'] = response.css("#qty").get() is not None
+      print("Successfully updated:", item['name'])
       yield item
-
